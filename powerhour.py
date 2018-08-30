@@ -1,8 +1,10 @@
 import csv
 from pydub import AudioSegment
 
-in_file_name = "csvs/mycsv.csv"
-out_file_name = "mypowerhour.wav"
+in_file_name = input("Enter the path or filename of the csv for generating the power hour: \n")
+# "csvs/mycsv.csv"
+out_file_name = input("Enter the name for the power hour output file (don't include the extension): \n")
+# "mypowerhour.wav"
 
 songs = []
 with open(in_file_name) as csvfile:
