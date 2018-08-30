@@ -4,8 +4,8 @@
 This project uses `pydub` to create a wav file to use as a power hour.  
 
 A csv is required with the required format:
-- Line 1: transition noise
-- Line 2 to 61: The files for the minute chunks in the power hour
+- Line 1: transition noise (Just the filename, the whole file will be played as the transition)
+- Line 2 to 61: The files for the minute chunks in the power hour (The filename and the start time of the desired minute in seconds separated by a comma)
 
 ### What is a power hour
 From Urban Dictionary:
