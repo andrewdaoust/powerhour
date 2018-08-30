@@ -12,13 +12,14 @@ with open(in_file_name) as csvfile:
 
 power_hour = AudioSegment.empty()
 
-transition = songs.pop(0)
+transition_file = songs.pop(0)
+transition = AudioSegment.from_wav(transition_file)
+
 for item in songs:
     filename, start_time = item[0], 'songs/' + item[1]
     song = AudioSegment.from_file(filename, format='.wav')
     start_time *= 1000
-    song = song[start_time:start_time + 60]
+    song = song[start_time:start_time + 60000]
     power_hour += song + transition
 
 power_hour.export(out_file_name, format=".wav")
-
