@@ -15,3 +15,6 @@ From Urban Dictionary:
 Take one shot of beer every minute for an hour. This can be more or less potent depending on what kind of beer you drink. From strongest to weakest, your choices are malt liquor, ice beer, regular beer, and light beer. To make a power hour even better, burn a 60 minute CD with 60 1 minute tracks. Play a different song for every shot you take!
 
 This repo helps create the "CD" for the power hour!
+
+
+P.S. Thanks Ian, love you ;*
