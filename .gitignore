@@ -1,3 +1,4 @@
 .idea/
 songs/
 csvs/
+*.ipynb
