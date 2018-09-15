@@ -5,11 +5,11 @@ This project uses `pydub` and `ffmpeg` to create a wav file to use as a power ho
 
 ### csv formatting
 A csv is required with the required format:
-- Line 1: transition noise (Just the filename, the whole file will be played as the transition)
-- Line 2 to 61: The files for the minute chunks in the power hour (The filename and the start time of the desired minute in seconds separated by a comma)
+- Line 1: transition sound, should follow the format: link(YouTube, Soundcloud, or whatever else youtube-dl supports), start time (minutes:seconds), end time (minute:seconds)
+- Line 2 to 61: The sources for the minute chunks in the power hour and should follow the format: link(YouTube, Soundcloud, or whatever else youtube-dl supports), start time (minutes:seconds)
 
 ### Setting up the project
-In the folder that contains the power hour script create directories called `csvs`, `songs`, and `out_files`.  Put any csvs you want to use in the `csvs` directory.  In the `songs` directory create a subdirectory containing all the songs you'd like to use.  The script will write the output file into the `out_files` directory.
+In the directory that contains the power hour script create another directory called `csvs`.  Put any csvs you want to use in the `csvs` directory.  When the code is run, it will ask for input from the user about the name of the csv, the name of the file to be output and its extention type, and the path for where to save the file.
 
 ### What is a power hour
 From Urban Dictionary:
