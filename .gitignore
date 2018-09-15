@@ -1,5 +1,5 @@
 .idea/
-songs/
+songs_old/
 csvs/
 *.ipynb
 out_files/
